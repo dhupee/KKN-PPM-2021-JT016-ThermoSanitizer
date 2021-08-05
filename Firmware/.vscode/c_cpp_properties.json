@@ -8,37 +8,39 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "D:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-JT016-ThermoSanitizer/Firmware/include",
-                "D:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-JT016-ThermoSanitizer/Firmware/src",
+                "d:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-2021-JT016-ThermoSanitizer/Firmware/include",
+                "d:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-2021-JT016-ThermoSanitizer/Firmware/src",
+                "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "d:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-2021-JT016-ThermoSanitizer/Firmware/.pio/libdeps/nanoatmega328/NewPing/src",
                 "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/cores/arduino",
-                "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/variants/standard",
+                "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
                 "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                 "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                 "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                 "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                 "C:/Users/dhupee/.platformio/packages/tool-unity",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "D:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-JT016-ThermoSanitizer/Firmware/include",
-                    "D:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-JT016-ThermoSanitizer/Firmware/src",
+                    "d:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-2021-JT016-ThermoSanitizer/Firmware/include",
+                    "d:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-2021-JT016-ThermoSanitizer/Firmware/src",
+                    "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "d:/TugasKampus/KKN PPM Periode2 2021/Project/KKN-PPM-2021-JT016-ThermoSanitizer/Firmware/.pio/libdeps/nanoatmega328/NewPing/src",
                     "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/cores/arduino",
-                    "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/variants/standard",
+                    "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
                     "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                     "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                     "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                     "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                    "C:/Users/dhupee/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                     "C:/Users/dhupee/.platformio/packages/tool-unity",
                     ""
                 ]
             },
             "defines": [
                 "PLATFORMIO=50101",
-                "ARDUINO_AVR_UNO",
+                "ARDUINO_AVR_NANO",
                 "F_CPU=16000000L",
                 "ARDUINO_ARCH_AVR",
                 "ARDUINO=10808",
