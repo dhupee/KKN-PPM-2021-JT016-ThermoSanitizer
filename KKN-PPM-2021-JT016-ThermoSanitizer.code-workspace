@@ -4,8 +4,12 @@
 			"path": "."
 		},
 		{
-			"name": "Firmware",
-			"path": "Firmware"
+			"name": "ThermoSanitizer Firmware",
+			"path": "ThermoSanitizer Firmware"
+		},
+		{
+			"name": "Clock Switch Firmware",
+			"path": "Clock Switch Firmware"
 		}
 	],
 	"settings": {}

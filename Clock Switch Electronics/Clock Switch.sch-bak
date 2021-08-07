@@ -226,70 +226,70 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x06_Female J1
 U 1 1 610FA866
-P 3350 1600
-F 0 "J1" H 3242 1985 50  0000 C CNN
-F 1 "RTC" H 3242 1894 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3350 1600 50  0001 C CNN
-F 3 "~" H 3350 1600 50  0001 C CNN
-	1    3350 1600
+P 3250 1650
+F 0 "J1" H 3142 2035 50  0000 C CNN
+F 1 "RTC" H 3142 1944 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3250 1650 50  0001 C CNN
+F 3 "~" H 3250 1650 50  0001 C CNN
+	1    3250 1650
 	-1   0    0    -1  
 $EndComp
-Text GLabel 3600 1400 2    50   Input ~ 0
+Text GLabel 3500 1450 2    50   Input ~ 0
 GND
-Text GLabel 3600 1500 2    50   Input ~ 0
+Text GLabel 3500 1550 2    50   Input ~ 0
 5V
-Text GLabel 3600 1600 2    50   Input ~ 0
+Text GLabel 3500 1650 2    50   Input ~ 0
 SDA
-Text GLabel 3600 1700 2    50   Input ~ 0
+Text GLabel 3500 1750 2    50   Input ~ 0
 SCL
-Text GLabel 3600 1800 2    50   Input ~ 0
+Text GLabel 3500 1850 2    50   Input ~ 0
 SDW
-Text GLabel 3600 1900 2    50   Input ~ 0
+Text GLabel 3500 1950 2    50   Input ~ 0
 32K
 Wire Wire Line
-	3600 1400 3550 1400
+	3500 1450 3450 1450
 Wire Wire Line
-	3600 1500 3550 1500
+	3500 1550 3450 1550
 Wire Wire Line
-	3600 1600 3550 1600
+	3500 1650 3450 1650
 Wire Wire Line
-	3600 1700 3550 1700
+	3500 1750 3450 1750
 Wire Wire Line
-	3600 1800 3550 1800
+	3500 1850 3450 1850
 Wire Wire Line
-	3600 1900 3550 1900
-Text GLabel 3600 800  2    50   Input ~ 0
+	3500 1950 3450 1950
+Text GLabel 3400 700  2    50   Input ~ 0
 GND
 $Comp
 L power:GND #PWR0108
 U 1 1 6110091C
-P 3550 850
-F 0 "#PWR0108" H 3550 600 50  0001 C CNN
-F 1 "GND" H 3555 677 50  0000 C CNN
-F 2 "" H 3550 850 50  0001 C CNN
-F 3 "" H 3550 850 50  0001 C CNN
-	1    3550 850 
+P 3350 750
+F 0 "#PWR0108" H 3350 500 50  0001 C CNN
+F 1 "GND" H 3355 577 50  0000 C CNN
+F 2 "" H 3350 750 50  0001 C CNN
+F 3 "" H 3350 750 50  0001 C CNN
+	1    3350 750 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 850  3550 800 
+	3350 750  3350 700 
 Wire Wire Line
-	3550 800  3600 800 
-Text GLabel 4000 800  2    50   Input ~ 0
+	3350 700  3400 700 
+Text GLabel 3900 800  2    50   Input ~ 0
 5V
 $Comp
 L power:+5V #PWR0109
 U 1 1 61101DD6
-P 3950 800
-F 0 "#PWR0109" H 3950 650 50  0001 C CNN
-F 1 "+5V" H 3965 973 50  0000 C CNN
-F 2 "" H 3950 800 50  0001 C CNN
-F 3 "" H 3950 800 50  0001 C CNN
-	1    3950 800 
+P 3850 800
+F 0 "#PWR0109" H 3850 650 50  0001 C CNN
+F 1 "+5V" H 3865 973 50  0000 C CNN
+F 2 "" H 3850 800 50  0001 C CNN
+F 3 "" H 3850 800 50  0001 C CNN
+	1    3850 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 800  3950 800 
+	3900 800  3850 800 
 Text GLabel 5200 1750 0    50   Input ~ 0
 PUMP
 $Comp
@@ -388,4 +388,48 @@ Wire Wire Line
 Connection ~ 5950 1500
 Wire Wire Line
 	5950 1500 5950 1450
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61118688
+P 8150 1600
+F 0 "H1" H 8250 1646 50  0000 L CNN
+F 1 "MountingHole" H 8250 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 1600 50  0001 C CNN
+F 3 "~" H 8150 1600 50  0001 C CNN
+	1    8150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6111A567
+P 8150 1800
+F 0 "H2" H 8250 1846 50  0000 L CNN
+F 1 "MountingHole" H 8250 1755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 1800 50  0001 C CNN
+F 3 "~" H 8150 1800 50  0001 C CNN
+	1    8150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6111A97C
+P 8150 2000
+F 0 "H3" H 8250 2046 50  0000 L CNN
+F 1 "MountingHole" H 8250 1955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 2000 50  0001 C CNN
+F 3 "~" H 8150 2000 50  0001 C CNN
+	1    8150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 6111AEC3
+P 8150 2200
+F 0 "H4" H 8250 2246 50  0000 L CNN
+F 1 "MountingHole" H 8250 2155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 2200 50  0001 C CNN
+F 3 "~" H 8150 2200 50  0001 C CNN
+	1    8150 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

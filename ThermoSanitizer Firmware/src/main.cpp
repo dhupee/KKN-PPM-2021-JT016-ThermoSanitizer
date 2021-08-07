@@ -11,7 +11,7 @@ NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 
 float duration; // Stores HC-SR04 pulse duration value
 float distance; // Stores calculated distance in cm
-int iterations = 7;
+int iterations = 5;
 
 bool sanitizer = false;
 
@@ -20,6 +20,7 @@ void setup() {
   
   Serial.begin(9600);
   pinMode(MOTOR, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
@@ -30,18 +31,27 @@ void loop() {
   Serial.print("Distance=");
   Serial.println(distance);
 
-  if (distance >= 5 && distance >= 50 && sanitizer == false) // in cm
+  if (distance >= 1 && distance <= 8 && sanitizer == false) // in cm
   {
-  sanitizer = true;
-  digitalWrite(MOTOR, HIGH);
-  delay(250);
-  digitalWrite(MOTOR, LOW);
-  delay(250);  
+    Serial.println("Hand detected, Sanitizer ON!");
+    digitalWrite(LED_BUILTIN, HIGH);
+    digitalWrite(MOTOR, HIGH);
+    Serial.println("Motor ON!");
+    delay(1000);
+    digitalWrite(MOTOR, LOW);
+    Serial.println("Motor OFF!");
+    delay(500);
+    sanitizer = true;
   }
-
-  if (distance >= 5 && sanitizer == true) // in cm
+  else if (distance >= 1 && distance <= 8 && sanitizer == true)
   {
+    Serial.println("Halt!");
+  }
+  else if (distance >= 8 && sanitizer == true) // in cm
+  {
+    Serial.println("Detected, Sanitizer OFF!");
+    digitalWrite(LED_BUILTIN, LOW);
     sanitizer = false;
-    delay(250);
+    delay(2000);
   }
 }
