@@ -52,6 +52,6 @@ void loop() {
     Serial.println("Detected, Sanitizer OFF!");
     digitalWrite(LED_BUILTIN, LOW);
     sanitizer = false;
-    delay(2000);
+    delay(500);
   }
 }
